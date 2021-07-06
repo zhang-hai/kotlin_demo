@@ -9,5 +9,10 @@ class NullDemo {
     //参数允许为null
     fun canNullTest(s:String?){
         println(s)
+
+        //s为null，停止执行
+        s?.capitalize()
+        //s为null，抛异常
+        s!!.capitalize()
     }
 }
