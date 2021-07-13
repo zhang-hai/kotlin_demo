@@ -1,6 +1,6 @@
 package com.example.kotlin_demo
 
-import java.lang.Exception
+import kotlin.Exception
 
 class ExceptionDemo {
     //异常捕获方式
@@ -28,4 +28,5 @@ class ExceptionDemo {
         }
     }
 
+    class CustomException(string: String):Exception(string)
 }
