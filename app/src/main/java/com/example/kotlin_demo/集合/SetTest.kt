@@ -9,4 +9,7 @@ fun main() {
     println(set.elementAt(1))
     println(set.elementAtOrElse(1){"UnKnown"})
     println(set.elementAtOrNull(1))
+
+    //转可变长度的Set集合
+    val toMutableSet = set.toMutableSet()
 }

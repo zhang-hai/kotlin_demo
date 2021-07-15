@@ -15,6 +15,10 @@ fun main() {
     //**************删除元素
     mutableList -= "Sam"
     mutableList.removeAt(0)
+    mutableList.removeFirst()
+    mutableList.removeFirstOrNull()
+    mutableList.removeLast()
+    mutableList.removeLastOrNull()
     mutableList.remove("Hab2")
     //移除符合条件的数据
     mutableList.removeIf{it.contains("k")}

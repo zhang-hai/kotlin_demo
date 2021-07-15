@@ -10,7 +10,7 @@ fun main() {
 
     println(list[2])
     //该方式获取时，若索引越界会抛异常
-//    println(list[4])
+    println(list[4])
     println(list.elementAt(1))
     //该方式获取指定的索引的值，若越界会返回指定的默认字符串
     println(list.getOrElse(4){"UnKnown"})
@@ -31,4 +31,6 @@ fun main() {
     //********* 转数组
     //这里list是对象类型的故要用toTypedArray
     val toTypedArray = list.toTypedArray()
+    //整数List
+    listOf(10,20).toIntArray()
 }
